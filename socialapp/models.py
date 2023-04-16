@@ -2,8 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 # Create your models here.
-from django.db import models
-from django.db import models
 
 class CreditUnion(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -22,7 +20,7 @@ class TopicCategory(models.Model):
 
     class Meta:
         ordering = ["name"]
-        verbose_name_plural = "Topics"
+        verbose_name_plural = "Topic Categories"
 
 class Topic(models.Model):
     category=models.ForeignKey(TopicCategory,on_delete=models.CASCADE)
