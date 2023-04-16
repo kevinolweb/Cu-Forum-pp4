@@ -10,8 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-import mimetypes
-mimetypes.add_type("text/css", ".css", True)
+
 from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import dj_database_url
@@ -34,7 +33,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["cuforumireland.herokuapp.com", "localhost"]
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-SUMMERNOTE_THEME = 'bs4'
 # Application definition
 
 INSTALLED_APPS = [
@@ -46,7 +44,6 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'django_summernote',
     'socialapp',
 ]
 
