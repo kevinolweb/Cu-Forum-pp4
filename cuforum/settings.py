@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["cuforumireland.herokuapp.com", "localhost"]
 X_FRAME_OPTIONS = 'SAMEORIGIN'
@@ -47,8 +47,6 @@ INSTALLED_APPS = [
     'cloudinary',
     'socialapp',
 ]
-
-AUTH_USER_MODEL = 'base.User'
 
 
 MIDDLEWARE = [
